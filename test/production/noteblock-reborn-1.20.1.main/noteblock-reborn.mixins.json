@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "asia.yhzcake.mixin",
+	"package": "asia.yhzcake.noteblock_reborn.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"AllayBrainMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

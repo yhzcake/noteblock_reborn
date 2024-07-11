@@ -16,18 +16,15 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"asia.yhzcake.block.NoteBlockBase"
-		],
-		"fabric-datagen": [
-			"asia.yhzcake.NoteblockRebornDataGenerator"
+          "asia.yhzcake.noteblock_reborn.NoteBlockBase"
 		]
 	},
 	"mixins": [
 		"noteblock-reborn.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.20.1",
+		"fabricloader": ">=0.0.0",
+		"minecraft": "1.20.X",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
