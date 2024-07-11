@@ -23,5 +23,12 @@ public class NoteBlockBase implements ModInitializer {
     public void onInitialize(){
         Registry.register(Registries.BLOCK, new Identifier("noteblock_reborn","noteblock_higher"), NOTEBLOCK_HIGHER);
         Registry.register(Registries.ITEM, new Identifier("noteblock_reborn","noteblock_higher"), new BlockItem(NOTEBLOCK_HIGHER, new Item.Settings()));
+        Registry.register(Registries.BLOCK, new Identifier("noteblock_reborn","noteblock_lower"), NOTEBLOCK_LOWER);
+        Registry.register(Registries.ITEM, new Identifier("noteblock_reborn","noteblock_lower"), new BlockItem(NOTEBLOCK_LOWER, new Item.Settings()));
+        SoundReg.registerReferences();
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(content -> {
+            content.addAfter(Items.NOTE_BLOCK, NOTEBLOCK_HIGHER);
+            content.addAfter(NOTEBLOCK_HIGHER, NOTEBLOCK_LOWER);
+        });
     }
 }

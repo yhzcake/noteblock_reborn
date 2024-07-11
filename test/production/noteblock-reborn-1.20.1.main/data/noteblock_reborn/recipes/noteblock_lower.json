@@ -1,0 +1,7 @@
+{
+  "type": "crafting_shapeless",
+  "group": "noteblock_reborn",
+  "category": "redstone",
+  "ingredients": [{ "item": "noteblock_reborn:noteblock_higher" }],
+  "result": { "item": "noteblock_reborn:noteblock_lower","count": 1 }
+}
