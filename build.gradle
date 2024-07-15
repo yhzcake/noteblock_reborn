@@ -3,8 +3,9 @@ plugins {
 	id 'maven-publish'
 }
 
-version = '2.0'
-group = 'asia.yhzcake.noteblock_reborn'
+archivesBaseName = project.archives_base_name
+version = project.mod_version
+group = project.maven_group
 
 base {
 	archivesName = 'noteblock_reborn'
